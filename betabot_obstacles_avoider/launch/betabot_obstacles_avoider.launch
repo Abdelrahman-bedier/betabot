@@ -1,0 +1,5 @@
+<launch>
+    <arg name="model" default="betabot" doc="model type [betabot, bb_0, bb_1]"/>
+    <param name="model" value="$(arg model)"/>
+    <node pkg="betabot_obstacles_avoider" type="avoider_run.py" name="avoider_run" output="screen"></node>
+</launch>

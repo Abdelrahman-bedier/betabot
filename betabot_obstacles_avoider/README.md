@@ -30,14 +30,21 @@ scans.
 ## After you implement the pkg state your reflection below
 
 ### How did you plan the task?
+building the package , then configuring how to read laser scan topic then writing the python code and make it executable and testing the package on gazebo.
 
 ### what is your logic?
+first get random angle to move the robot by it. then moving forward always till it faces an obstacle by 2 m then it changes the angle of the robot till no obstacle ahead and keep moving forward.
 
 ### What ROS REPs did you used?
+geometry_msgs , rospy and std_msgs
 
 ### How we could increase the overall performance?
+I made the betabot to check only the angles ahead of it. these angels are 0(straight ahead ),-20 (20 degrees twoards right) , -25 (25 degrees twoards right),-10 (10 degrees twoards right) and 10 (10 degrees twoards left) as i made the robot to avoid obstacles by always moving left.
+so by generalizing the betabot to check all the angles around his area will improve the overall performance.
+
 
 ### List the most time consuming problems you faced
+reading laser scan didn't take much time but manipulating angles takes much time to get it right.
 
 ---
 
@@ -45,14 +52,16 @@ scans.
 Add unlisted youtube/drive video
 
 [Demo](yourlinkhere)
+https://drive.google.com/file/d/14RcGMFqTy9YSqnAb7PSiB07Hf0xELH1t/view?usp=sharing
 
 ### Screenshot
 
 [image](yourscreenshot)
 
+
 ---
 
-#### NAME:
-#### ID:
+#### NAME:Abdelrahman Aly Bedier
+#### ID:201400473
 
 ---
